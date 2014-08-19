@@ -1,0 +1,43 @@
+" Modeline and Settings {
+" vim: set foldmarker={,} foldmethod=marker foldlevel=0:
+" }
+
+" Custom GUI Settings {
+    if has("gui_running")
+        if OSX()
+            set bg=light
+            colorscheme solarized
+            set guifont=PragmataPro:h14
+        endif
+        try
+            set breakindent
+        catch /.*/
+            " Do nothing 
+        endtry
+    endif
+" }
+
+" NERDTree {
+    if isdirectory(expand("~/.vim/bundle/nerdtree/"))
+        let NERDTreeDirArrows=1
+    endif
+" }
+
+" NERDCommenter {
+    if isdirectory(expand("~/.vim/bundle/nerdcommenter/"))
+        let g:NERDSpaceDelims = 1
+    endif
+" }
+
+" Airline {
+    if isdirectory(expand("~/.vim/bundle/vim-airline/"))
+        let g:airline_theme = "solarized"
+        let g:airline#extensions#bufferline#overwrite_variables = 1
+    endif
+" }
+
+" vim-bufferline {
+    if isdirectory(expand("~/.vim/bundle/vim-bufferline/"))
+        let g:bufferline_echo = 0
+    endif
+" }

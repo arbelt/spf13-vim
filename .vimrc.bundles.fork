@@ -1,0 +1,4 @@
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'kien/rainbow_parentheses.vim'

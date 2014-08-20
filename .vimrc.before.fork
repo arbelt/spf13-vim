@@ -46,13 +46,13 @@
     " Disable neosnippet expansion
     " This maps over <C-k> and does some Supertab
     " emulation with snippets
-    "   let g:spf13_no_neosnippet_expand = 1
+    let g:spf13_no_neosnippet_expand = 1
 
     " Disable whitespace stripping
     "   let g:spf13_keep_trailing_whitespace = 1
 
     " Enable powerline symbols
-       let g:airline_powerline_fonts = 1
+    let g:airline_powerline_fonts = 1
 
     " vim files directory
     "   let g:spf13_consolidated_directory = <full path to desired directory>
@@ -92,5 +92,19 @@
     " Require a special keypress to enter multiple cursors mode
     "   let g:multi_cursor_start_key='+'
 
+" }
+
+" vim-bufferline {
+    if isdirectory(expand("~/.vim/bundle/vim-bufferline/"))
+        let g:bufferline_echo = 0
+    endif
+" }
+
+" airline {
+    if isdirectory(expand("~/.vim/bundle/vim-airline/"))
+        let g:airline_theme = "solarized"
+        let g:airline#extensions#bufferline#enabled = 1
+        let g:airline#extensions#bufferline#overwrite_variables = 1
+    endif
 " }
 

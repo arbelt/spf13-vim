@@ -29,15 +29,3 @@
     endif
 " }
 
-" Airline {
-    if isdirectory(expand("~/.vim/bundle/vim-airline/"))
-        let g:airline_theme = "solarized"
-        let g:airline#extensions#bufferline#overwrite_variables = 1
-    endif
-" }
-
-" vim-bufferline {
-    if isdirectory(expand("~/.vim/bundle/vim-bufferline/"))
-        let g:bufferline_echo = 0
-    endif
-" }

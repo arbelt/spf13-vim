@@ -6,3 +6,5 @@ if executable('task')
     Plugin 'farseer90718/vim-taskwarrior'
     let g:task_report_name='long'
 endif
+
+Plugin 'vim-scripts/Vim-R-plugin'
